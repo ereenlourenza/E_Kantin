@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.body {
+    background-color: #FFFFFF; /* Warna background */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+  text-align: center;
+  background-color: #F6BC13;
+  width: 1248px;
+  height: 78px;
+  margin-left: -65px;
+  background-image: url('/img/kantin.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 120px;
+  border-radius: 0 0 15px 15px;
+  position: sticky; /* Mengubah dari fixed menjadi sticky */
+  top: 0; /* Tetap pada posisi atas saat di-scroll */
+  z-index: 1000; /* Pastikan header muncul di atas konten lain */
+  margin-top: -90px;
+}
+
+.logo {
+    margin-left: -60px;
+    background-repeat: no-repeat; 
+}
+.icon{
+    font-size: 44px;
+    margin-left: 120px;
+    font-family: "Lalezar", system-ui;
+    color: #293859;
+    margin-top: 13px;
+}
+
+.input-text:focus{
+    box-shadow: 0px 0px 0px;
+    border-color:#f8c146;
+    outline: 0px;
+}
+
+.form-control {
+    border: 1px solid #f8c146;
+    margin-left: 50px;
+    margin-right: 80px;
+    width: 800px;
+    margin-top: 20px;
+}
+.bi-cart{
+    margin-left: 15px;
+    margin-right: 26px;
+    margin-top: 18px;
+}
+.bi-journal-text{
+    margin-top: 18px;
+}
+.iconF {
+  width: 44px;
+  height: 58px;
+  display: flex;
+  margin-right: 90px;
+  margin-top: 10px;
+}
+/* Sidebar */
+.sidebar {
+    margin-top: 89px;
+    /* box-shadow: 0px 0px 0px 1px; */
+    position: fixed;
+    top: 0;
+    left: 0; /* Ubah left menjadi 0 agar sidebar terlihat */
+    width: 229px;
+    height: 540px;
+    border: 2px solid #DE5D01;
+    transition: left 0.3s ease;
+    z-index: 1000; /* Pastikan sidebar muncul di atas konten lain */
+    background-color: white;
+  }
+    
+  .customer-icon img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left:  70px;
+
+  }
+  
+  .customer-name {
+    color: #DE5D01;
+    margin-left:  80px;
+  }
+  
+  .menu-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white;
+    color: #DE5D01;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .menu-button3 {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 230px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: #DE5D01;
+  }
+  .openSidebarButton {
+    position: fixed;
+    bottom: 540px; /* Posisikan tombol di bagian bawah layar */
+    left: 5px;
+    border: 2px solid #DE5D01;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999; /* Pastikan tombol muncul di belakang sidebar */
+    background-size: 22px;
+  }
+
+/* Main content */
+  .content {
+    margin-top: 100px;
+    margin-left: 80px; 
+    /* Adjust to sidebar width */
+    /* Other styles for main content */
+  }
+  .description{
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: -10px;
+  }
+  .selamat{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    margin-left: -10px;
+  }
+  .content {
+    position: relative;
+  }
+  .cek-list {
+    position: absolute;
+    top: 65%;
+    left: -50px;
+    transform: translateY(-50%);
+  }
+  
+  .cek-button {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff; /* Mengatur warna background checkbox */
+    border: none;
+    cursor: pointer;
+    border: 1px solid #DE5D01;
+  }
+  .card {
+    border: 3px solid #DE5D01;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 20px;
+    position: relative;
+    width: 1080px;
+    height: 190px;
+  }
+  
+  .card img {
+    width: 220px;
+    height: 150px;
+    border-radius: 8px;
+  }
+  
+  .detail-produk {
+    position: absolute;
+    top: 40;
+    right: -40;
+    width: calc(100% - 220px); /* Lebar total card dikurangi lebar gambar */
+  }
+  
+  .nama-produk {
+    font-family: "Poppins", sans-serif;
+    font-weight: medium;
+    font-size: 25px;
+  }
+  
+  .hapus {
+    position: absolute;
+    top: 80;
+    right: 50;
+    width: 100px;
+
+  }
+  
+  .harga {
+    position: absolute;
+    top: 80; /* Atur elemen harga sejajar dengan elemen hapus */
+    right: 170px; /* Atur elemen harga sejajar dengan elemen hapus */
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #DE5D01;
+    font-size: 25px;
+  }
+  
+  .jumlah {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .jumlah span {
+    height: 35px;
+    width: 35px;
+    border: 2px solid #DE5D01; /* Tambahkan border hanya pada angka */
+    padding: 6px 18px; /* Sesuaikan padding agar tetap sejajar dengan tombol */
+    margin: 0 5px; /* Beri jarak antara angka dan tombol */
+  }
+  .fa-plus{
+    color: #DE5D01;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .fa-minus{
+    font-size: 30px;
+    color: #DE5D01;
+    font-weight: bolder;
+  }
+
+  .jumlah button {
+    border: none;
+    padding: 8px 18px;
+    cursor: pointer;
+    background-color: white;
+
+  }
+  .jumlah button:hover {
+    cursor: pointer;
+    color: #DE5D01; /* Mengubah warna kursor menjadi biru saat kursor berada di atas tombol */
+  }
+  
+  .hapus {
+    background-color: #DE5D01;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .pesan {
+    position: absolute;
+    bottom: -80px; /* Sesuaikan jarak dari bawah */
+    right: -40px; /* Sesuaikan jarak dari kanan */
+    background-color: #DE5D01;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 180px;
+  }
+  .kembali-button {
+    position: absolute;
+    top: 470px;
+    left: -80px;
+    background-color: #DE5D01;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .kembali-button:hover {
+    background-color: #DE5D01;
+  }
+  /* footer */
+.footer {
+    background-color: #F6BC13;
+    color: #FFFFFF; /* warna teks diubah menjadi putih */
+    padding: 20px; /* atur padding sesuai kebutuhan */
+    text-align: center; /* teks di tengah */
+    position: fixed; /* tetap pada posisi bawah layar */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* lebar penuh */
+    height: 48px;
+  }
+  .left-icons{
+    size: 10px;
+  }
+  
+  /* Styles for right text */
+  .right-text {
+    font-size: 14px; 
+    margin-left: 520px; 
+    margin-top: -5px; 
+  }
+  

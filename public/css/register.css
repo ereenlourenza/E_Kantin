@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+.container {
+    padding: 0px;
+
+}
+
+/* Left container */
+.left-container {
+    background-color: #F2F1D3;
+    width: 800px; /* Adjust the width as needed */
+    margin-left: -125px;
+    height: 675px;
+    position: absolute;
+}
+.Kantin{
+    font-size: 72px;
+    font-weight: bold;
+    color: #293859;
+    margin-bottom: 5px;
+    margin-left: 80px;
+}
+.Description{
+    font-size: 14px;
+    color: #293859;
+    margin-right: 70px;
+    margin-left: 90px;
+}
+
+/* Right container */
+.right-container {
+    background-color: #fff;
+    width: 820px; /* Adjust the width as needed */
+    margin-left: 750px;
+    height: 675px;
+    background-image: url('/img/background1.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    opacity: 8; 
+}
+
+/* Logo styles */
+.logo-container_A img {
+    width: 450px; /* Adjusted width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    margin-left:160px;
+    margin-top: 50px;
+}
+.icon-container_B img{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    width: 100%;
+}
+
+.register-form {
+    padding: 20px;
+    
+}
+.subtext {
+    font-size: 52px;
+    font-weight: bolder;
+    color: #293859;
+    margin-bottom: 10px;
+    font-family: "Lalezar", system-ui;
+}
+
+/* Button container */
+.button-container {
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="text"],
+input[type="password"] {
+    width: 385px;
+    height: 39px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Input focus */
+input[type="text"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #DE5D01;
+}
+
+/* Submit button */
+button[type="submit"] {
+    background-color: #DE5D01;
+    color: white;
+    padding: 10px 10px;
+    width: 385px;
+    height: 42px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: center;
+}
+
+.link{
+    color: #DE5D01;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 100%) {
+    .left-container, .right-container {
+        margin-left: 0;
+    }
+}
